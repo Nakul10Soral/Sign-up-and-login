@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/99724e63cb.js" crossorigin="anonymous"></script>
+    <title>Login and singup</title>
+</head>
+<body>
+    <div class="bgimg">
+        <img src="./img/Presentation1-removebg.png" alt="circle">
+    </div>
+
+<!-- LEFT SIDE FORM FOR REGISTRATION -->
+    <section class="left">
+        <section class="side login sdl">
+            <p class="title">NOT AN ACCOUNT?</p>
+            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, doloribus.</p>
+            <button>REGISTER</button>
+            <img src="./img/undraw_sign_in_re_o58h.svg" >
+        </section>
+
+        <section class="main register mrg">
+            <div class="container">
+                <p class="title">REGISTER</p>
+
+                <form action="">
+                    <div class="form-control">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" id="reg-username" placeholder="Username">
+                    </div>
+
+                    <div class="form-control">
+                        <i class="fa-solid fa-lock-open"></i>
+                        <input type="password" name="reg-password" id="reg-password" placeholder="Password">
+                    </div>
+
+                    <div class="form-control">
+                        <i class="fa-sharp fa-solid fa-lock"></i>
+                        <input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirm password">
+                    </div>
+
+                    <button type="submit">REGISTER</button>
+                </form>
+            </div>
+        </section>
+    </section>
+<!-- RIGHT SIDE FORM FOR LOGIN -->
+    <section class="right">
+        <section class="side register sdr">
+            <p class="title">ALREADY REGISTERED?</p>
+            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, doloribus.</p>
+            <button>LOGIN</button>
+            <img src="./img/undraw_secure_login_pdn4.svg" alt="">
+        </section>
+
+        <section class="main login logs">
+            <div class="container">
+                <p class="title">Login</p>
+                <form>
+                    <div class="form-control">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="form-control">
+                        <i class="fas fa-unlock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <button class="submit">Login</button>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        var sidebtn = document.querySelectorAll('.side button');
+        sidebtn.forEach(btn => btn.addEventListener('click',() =>{
+            document.body.classList.toggle('signup');
+        }
+        )
+        );
+    </script>
+</body>
+</html>
